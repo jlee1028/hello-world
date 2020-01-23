@@ -1,0 +1,26 @@
+n = int (input ('n: '))
+x = int (input ('x: '))
+p = float (input ('p: '))
+
+def factorial(n):
+    k = 1
+    for i in range(n):
+        k = k * (i + 1)
+    return k
+
+def n_choose_x (n, x):
+    def factorial(n):
+        k = 1
+        for i in range(n):
+            k = k * (i + 1)
+        return k
+    n_factorial = factorial (n)
+    n_x_factorial = factorial (n - x)
+    x_factorial = factorial (x)
+    return n_factorial/(n_x_factorial * x_factorial)
+C = n_choose_x (n, x)
+
+def binomial_rv (n, x, p):
+    return C * p**x * (1 - p) ** (n - x)
+P = binomial_rv (n, x, p)
+print ('\nprobability: ',P*100, '%')
