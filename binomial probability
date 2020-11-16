@@ -24,3 +24,4 @@ def binomial_rv (n, x, p):
     return C * p**x * (1 - p) ** (n - x)
 P = binomial_rv (n, x, p)
 print ('\nprobability: ',P*100, '%')
+print('hello world')
