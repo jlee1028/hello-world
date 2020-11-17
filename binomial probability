@@ -1,7 +1,3 @@
-n = int (input ('n: '))
-x = int (input ('x: '))
-p = float (input ('p: '))
-
 def factorial(n):
     k = 1
     for i in range(n):
