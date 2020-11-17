@@ -1,3 +1,3 @@
 # hello-world
 
-initial repository to share some little programs I've written
+initial repository to which I will add as I learn
